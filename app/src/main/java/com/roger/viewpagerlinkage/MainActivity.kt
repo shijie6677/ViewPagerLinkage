@@ -19,9 +19,6 @@ class MainActivity : AppCompatActivity() {
         mBinding.mViewPage1.adapter = adapter1
         mBinding.mViewPage2.adapter = adapter2
 
-        mBinding.mFrameLayout1.setTag("pager1")
-        mBinding.mFrameLayout2.setTag("pager2")
-
         mBinding.mFrameLayout1.setOtherFrameLayout(mBinding.mFrameLayout2)
         mBinding.mFrameLayout2.setOtherFrameLayout(mBinding.mFrameLayout1)
     }
